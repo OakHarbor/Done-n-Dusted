@@ -2,13 +2,21 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+.navbar-menu {
+    z-index: 89;
+}
+
+.desktop, .tablet {
+    display: none !important;
+}
 
 #hero {
-    height: 650px;
+    height: 800px;
     width: 100%;
     background: url("../images/landing-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #fff;
     position: relative;
     display: -webkit-box;
@@ -39,7 +47,7 @@
 }
 
 .heroText {
-	padding-top: 0;
+	padding-top: 220px;
     position: relative;
     z-index: 10;
     height: auto;
@@ -57,22 +65,22 @@
             justify-content: center;
     -webkit-transform: translateY(-50px);
         -ms-transform: translateY(-50px);
-            transform: translateY(-50px);
+            transform: translateY(-150px);
 }
 
 .heroText h1 {
-	font-size: 2.2em;
+    font-size: 2.2em;
+    line-height: 43px;
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
-	overflow-y: hidden;
     margin: 0;
     position: relative;
 }
 
 .heroText h2 {
 	color: #fff;
-	font-size: 1em;
+	font-size: .9em;
 	text-align: center;
 	line-height: 1.6em;
     padding: 30px 0;
@@ -86,19 +94,9 @@
             justify-content: center;
 }
 
-.heroText h2:before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 5px;
-    background: var(--primary);
-    top: 12px;
-    margin: auto;
-}
-
 .about-button, .quote-button {
     width: 188px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
     display: block;
 }
 
@@ -115,16 +113,15 @@
     margin-right: auto;
 }
 
-.clippy {
-    height: 70px;
-    background: #fff;
-    width: 100%;
+.bubbles {
     position: absolute;
-    bottom: -3px;
-    -webkit-clip-path: polygon(50% 92%, 100% 0, 100% 100%, 0 100%, 0 0);
-            clip-path: polygon(50% 92%, 100% 0, 100% 100%, 0 100%, 0 0);
-    z-index: 100;
+    width: 400%;
+    bottom: -100px;
+    z-index: 9;
+    left: -852px;
 }
+
+
 
 /*-- -------------------------- -->
 <---          SERVICES          -->
@@ -133,17 +130,19 @@
 .top-card {
     -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
-    -webkit-transform: translateY(-160px);
-        -ms-transform: translateY(-160px);
-            transform: translateY(-160px);
+    -webkit-transform: translateY(-39px);
+        -ms-transform: translateY(-39px);
+            transform: translateY(-39px);
     position: relative;
     z-index: 10;
     background: #fff;
     padding: 25px 0;
     width: 90%;
+    max-width: 350px;
     margin: auto;
+    margin-top: -100px;
     border-radius: 10px;
-    z-index: 100;
+    z-index: 10;
 }
 
 .card-item {
@@ -160,6 +159,9 @@
 .card-item h2 {
     text-align: center;
     margin: 20px auto;
+    font-family: 'billy_ohioregular', sans-serif;
+    font-size: 33px;
+    font-weight: normal;
 }
 
 .card-item p {
@@ -170,10 +172,16 @@
 .card-item button {
     display: block;
     margin: auto;
+    border: 1px solid transparent;
+}
+
+.card-item button:hover {
+    border: 1px solid var(--primary);
 }
 
 .left img {
     width: 100%;
+    height: auto;
     display: none;
     border-radius: 7px;
     -webkit-box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.75);
@@ -184,12 +192,15 @@
     display: block;
 }
 
-.right p {
+.right span {
     margin-top: 50px;
     margin-bottom: 0px;
     font-weight: 400;
     color: #007cfb;
-    font-size: 0.9375em;
+    font-size: 1.7em;
+    font-family: 'billy_ohioregular', sans-serif;
+    margin-top: 50px;
+    display: block;
 }
 
 .right h2 {
@@ -197,7 +208,7 @@
     margin-bottom: 20px;
 }
 
-.right h3 {
+.right p {
     font-weight: 300;
     font-size: 1em;
     margin-bottom: 40px;
@@ -276,10 +287,21 @@
     position: relative;
     padding: 70px 30px 30px 30px;
     z-index: 20;
+    border-radius: 10px;
 }
 
 .service h2, .service p {
     text-align: center;
+}
+
+.services-header {
+    font-family:'billy_ohioregular';
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 130px;
+    color: var(--primary);
 }
 
 .service-icon {
@@ -297,23 +319,6 @@
     z-index: 1000;
 }
 
-.service:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 80px;
-    width: 80px;
-    background: var(--primary);
-    top: -30px;
-    left: -10px;
-    z-index: -200;
-    border-radius: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-57%);
-        -ms-transform: translateX(-57%);
-            transform: translateX(-57%);
-  }
-
 .service img {
     width: 40px;
     position: relative;
@@ -328,9 +333,9 @@
 
 .service h2 {
     color: #082680;
-    font-weight: 700;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .service p {
@@ -340,15 +345,23 @@
 }
 
 .centerpiece {
-    -webkit-perspective: 700px;
-            perspective: 700px;
     margin-bottom: 90px;
     position: relative;
 }
 
-.center-image {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+.center-image span {
+    font-family: 'billy_ohioregular', sans-serif;
+    font-size: 58px;
+    line-height: 60px;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: var(--tertiary);
 }
 
 .centerpiece img {
@@ -356,11 +369,7 @@
     max-width: 400px;
     display: block;
     margin: auto;
-    border-radius: 50%;
     z-index: 1;
-    border: 8px solid #fff;
-    -webkit-box-shadow: 0 0 21px -9px rgba(0,0,0,.75);
-            box-shadow: 0 0 21px -9px rgba(0,0,0,.75);
 }
 
 .experience {
@@ -416,16 +425,22 @@
 <--- -------------------------- -*/
 
 #team {
-    background: #e3e8ed;
+    background: url("/images/bubble-background.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
 }
 
-#team .team-left span {
-    color: #3a4268;
-    font-size: 18px;
-    font-weight: bold;
+.team-h2 {
+    color: var(--primary);
+    font-size: 80px;
+    font-weight: normal;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    font-family: 'billy_ohioregular', sans-serif;
 }
 
 #team .team-left span:before {
@@ -454,6 +469,7 @@
     color: #082680;
     font-weight: 800;
     font-size: 32px;
+    display: block;
 }
 
 #team h3 {
@@ -462,6 +478,8 @@
     font-weight: 500;
     color: #3a4268;
     margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+    width: 600px;
 }
 
 .picture {
@@ -484,7 +502,7 @@
 }
 
 .erica {
-    background: url("../images/expert2.jpg");
+    background: url("../images/erica.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -499,22 +517,33 @@
     overflow: hidden;
     width: 270px;
     max-width: 370px;
+    border-radius: 10px;
 }
 
 .expert:before {
     content: '';
     position: absolute;
     display: block;
-    height: 100%;
-    width: 1000px;
-    left: -300px;
-    background: #ffffff;
-    border-top: 10px solid rgb(0, 124, 251);
-    top: 50%;
-    margin-top: 60px;
-    -webkit-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-            transform: rotate(10deg);
+    height: 50px;
+    width: 100%;
+    left: 0px;
+    bottom: 94px;
+    background: url("/images/bubbles.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.expert .textcontainer {
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
+    height: 75px;
+}
+
+.textcontainer span {
+    width: 100%;
+    color: #fff;
 }
 
 .expert img {
@@ -522,6 +551,7 @@
 }
 
 .expert-info {
+    position: relative;
     padding: 20px 20px 40px 20px;
     background: #fff;
 }
@@ -532,14 +562,14 @@
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 100;
+    z-index: 70;
 }
 
 #team .expert h4 {
     color: #3a4268;
     font-size: 14px;
     position: relative;
-    z-index: 100;
+    z-index: 70;
 }
 
 .expert a {
@@ -550,6 +580,7 @@
     background: #0431b8;
     right: 15px;
     bottom: 30px;
+    z-index: 80;
 }
 
 .expert a img {
@@ -612,6 +643,7 @@ textarea {
     padding-left: 25px;
     background: rgba(255, 255, 255, .1);
     color: #fff;
+    border-radius: 5px;
 }
 
 textarea {
@@ -689,7 +721,7 @@ form p .button-solid:before {
     display: block;
     height: 35px;
     width: 35px;
-    border-radius: 3px;
+    border-radius: 17px;
     background: #007cfb;
     top: 50%;
     right: 5px;
@@ -1270,6 +1302,23 @@ form p img {
     margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+
+    .nav-bubbles {
+        display: none;
+    }
+
+    .top-card {
+        max-width: 600px;
+    }
+
+    .mobile-wrapper img {
+        height: 200px;
+        margin-top: 200px;
+    }
+    
+}
+
 /* Tablets */
 @media screen and (min-width: 681px) and (max-width: 899px) {
 
@@ -1286,7 +1335,7 @@ form p img {
     }
 
     .heroText {
-        width: 700px;
+        width: 800px;
         display: block;
         margin: auto;
         margin: auto;
@@ -1294,7 +1343,8 @@ form p img {
 
     #home-h {
         width: 550px;
-        font-size: 3em;
+        font-size: 3.6em;
+        line-height: 60px;
         margin: auto;
         text-align: center;
     }
@@ -1315,6 +1365,10 @@ form p img {
     .card-item {
         max-width: 400px;
         margin: auto;
+    }
+
+    .card-item h2 {
+        font-size: 52px;
     }
 
     #services {
@@ -1391,6 +1445,10 @@ form p img {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
+    /*-- -------------------------- -->
+    <---            Team            -->
+    <--- -------------------------- -*/
 
     .team-container {
         display: -webkit-box;
@@ -1487,30 +1545,36 @@ form p img {
     }
 
     /*-- -------------------------- -->
-    <---           VIDEO          -->
+    <---        Contact-strip       -->
     <--- -------------------------- -*/
 
-    .video-content {
-        -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-                transform: translateY(100px);
+    #call-strip {
+        height: 650px;
     }
 
-    .video-content h2 {
-        font-size: 2.3em;
+    #call-strip h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
     }
 
-    .video-content h3 {
-        margin-bottom: 40px;
-        width: 500px;
+    #call-strip h3 {
+        font-size: 50px;
     }
 
-    video {
-        width: 500px;
+    .card-section {
+        padding: 50px;
+    }
+
+    .card-section-item {
+        margin-bottom: 50px;
+    }
+
+    .card-section-item:last-child {
+        margin-bottom: 0;
     }
 
     /*-- -------------------------- -->
-    <---          REVIEWS           -->
+    <---           REVIEWS          -->
     <--- -------------------------- -*/
 
     .review-topper h2 {
@@ -1525,29 +1589,17 @@ form p img {
 /* Ipad Pro */
 @media screen and (min-width: 900px) and (max-width: 1023px) {
 
+    .container {
+        max-width: 1000px;
+        padding: 0 2%;
+    }
+
     #hero {
-        height: 800px;
         width: 100%;
         background: url("../images/landing-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-position-y: top;
-        color: #fff;
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
     }
 
     #dark {
@@ -1559,47 +1611,25 @@ form p img {
         z-index: 2;
     }
 
-    .heroText {
-        padding: 0px 0 0;
-        position: relative;
-        z-index: 3;
-        height: auto;
-        margin: auto;
-    }
-
     .heroText h1 {
-        font-size: 3em;
+        font-size: 4em;
+        line-height: 60px;
         color: #fff;
         text-align: center;
         font-weight: bold;
-        overflow-y: hidden;
         margin: 0;
         width: 600px;
     }
 
     .heroText h2 {
         color: #fff;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
         line-height: 1.6em;
         padding: 30px 0;
         width: 550px;
         position: relative;
         font-weight: normal;
-    }
-
-    .heroText h2:before {
-        content: '';
-        position: absolute;
-        width: 60px;
-        height: 5px;
-        background: var(--primary);
-        top: 12px;
-    }
-
-    .about-button {
-        width: 188px;
-        margin-right: 30px;
     }
 
     .white-comb {
@@ -1615,13 +1645,15 @@ form p img {
         bottom: -2px;
     }
 
+
+
     /*-- -------------------------- -->
     <---          SERVICES          -->
     <--- -------------------------- -*/
 
     #services {
         position: relative;
-        padding-top: 470px;
+        padding-top: 100px;
     }
 
     .top-card {
@@ -1673,9 +1705,12 @@ form p img {
     }
 
     .services-group {
+        padding-top: 400px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        position: relative;
+        z-index: 100;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -1704,49 +1739,23 @@ form p img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        height: 350px;
-        width: 400px;
+        height: auto;
+        width: 300px;
         -ms-flex-item-align: start;
             align-self: flex-start;
         margin-right: 30px;
+        margin-top: 50px;
     }
 
     .left img {
         display: block;
-        width: 160px;
-        height: 160px;
+        width: 260px;
+        height: 260px;
+        margin-bottom: 20px;
     }
 
-    .left img:first-child, .left img:nth-child(3) {
-        -webkit-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-                transform: translateY(-10px);
-        -webkit-animation-name: leftMove;
-                animation-name: leftMove;
-        -webkit-animation-duration: 4.5s;
-                animation-duration: 4.5s;
-        -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-        -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-    }
-
-    .left img:nth-child(2), .left img:nth-child(4) {
-        -webkit-transform: translateY(10px);
-            -ms-transform: translateY(10px);
-                transform: translateY(10px);
-        -webkit-animation-name: rightMove;
-                animation-name: rightMove;
-        -webkit-animation-duration: 4.5s;
-                animation-duration: 4.5s;
-        -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-        -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
+    .left img:nth-child(1), .left img:nth-child(2) {
+        display: none;
     }
 
     @-webkit-keyframes leftMove {
@@ -1856,32 +1865,7 @@ form p img {
         margin: 0;
         margin-bottom: 35px;
     }
-
-    /*-- -------------------------- -->
-    <---           VIDEO            -->
-    <--- -------------------------- -*/
-
-    #video {
-        background: url("/images/video-background-desktop.jpg");
-    }
-
-    .video-content {
-        height: 700px;
-    }
-
-    .video-content h2{
-        width: 600px;
-        font-size: 2.7em !important;
-    }
-
-    .video-content h3 {
-        width: 550px;
-    }
-
-    iframe {
-        width: 800px;
-        height: 800px;
-    }
+    
     /*-- -------------------------- -->
     <---           CONTENT          -->
     <--- -------------------------- -*/
@@ -2066,6 +2050,25 @@ form p img {
     }
 
     /*-- -------------------------- -->
+    <---            Team            -->
+    <--- -------------------------- -*/
+
+    .team-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .expert {
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+
+    /*-- -------------------------- -->
     <---           GALLERY          -->
     <--- -------------------------- -*/
 
@@ -2096,13 +2099,18 @@ form p img {
         padding-bottom: 100px;
     }
 
+    .container {
+        max-width: 1200px;
+        padding: 0 2%;
+    }
+
     /*-- -------------------------- -->
     <---           LANDING          -->
     <--- -------------------------- -*/
 
     #hero {
         margin-top: 0px;
-        height: 1050px;
+        height: 1200px;
         width: 100%;
         background: url("../images/landing-desktop.jpg");
         background-repeat: no-repeat;
@@ -2128,20 +2136,24 @@ form p img {
 
     #hero .container {
         width: 100%;
-        max-width: 790px;
+        max-width: 1050px;
+        padding-right: 530px;
     }
 
     .heroText {
-        width: 700px;
-        margin-top: 100px;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 00px;
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: start;
         display: block;
+        padding-top: 100px;
     }
 
     #home-h {
         font-size: 3.6em;
+        line-height: 60px;
         text-align: left;
         width: 100%;
     }
@@ -2169,6 +2181,24 @@ form p img {
     #herobutton2 {
         display: inline-block !important;
         margin: 0 20px 0 0 !important;
+    }
+
+    .bubbles {
+        width: 100%;
+        left: 0;
+        bottom: -100px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+
+    .tablet {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
     }
 
 
@@ -2199,9 +2229,10 @@ form p img {
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
-        top: -250px;
+        top: -150px;
         z-index: 200;
         border-radius: 10px;
+        margin-top: -100px !important;
     }
 
     .card-item {
@@ -2407,7 +2438,7 @@ form p img {
 
     .icons {
         margin-bottom: 28px;
-        margin-right: 30px;
+        margin-right: 0px;
         width: 230px;
     }
 
@@ -2432,11 +2463,16 @@ form p img {
 
     .service {
         width: 30%;
+        height: 235px;
     }
 
     /*-- -------------------------- -->
     <---            Team            -->
     <--- -------------------------- -*/
+
+    #team {
+        padding: 150px 0 100px;
+    }
 
     .team-top {
         text-align: center;
@@ -2447,8 +2483,10 @@ form p img {
         text-align: left;
     }
 
-    #team .team-left span {
-        text-align: left;
+    .team-h2 {
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 
     #team h2 {
@@ -2461,7 +2499,6 @@ form p img {
     #team h3 {
         display: inline-block;
         width: 447px;
-        text-align: ;
     }
 
     .team-container {
@@ -2758,29 +2795,6 @@ form p img {
 
     .container {
         max-width: 1180px;
-    }
-
-
-    #services .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-
-    .service-group, .centerpiece {
-        display: inline-block;
-    }
-
-    .service {
-        margin: 0 0 70px 0;
-        display: block;
-        width: 295px;
     }
 
     .left {

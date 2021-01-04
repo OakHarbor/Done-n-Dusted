@@ -28,7 +28,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/core-styles.css">
+    <link rel="stylesheet" href="css/bubbles-sizing.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bubbles.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,13 +51,14 @@
         <!-- Desktop Navbar -->
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="/images/logo.png" alt="mobile_company_logo" height="60"> 
+                <img id="mobile-logo" src="/images/logo-border.png" alt="mobile_company_logo" height="60"> 
 
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
                     <span aria-hidden="true" class="hamburger-box">
                         <span aria-hidden="true" class="hamburger-inner"></span>
                     </span>
+                    <span class="button-back"></span>
                 </button>
             </div>
         </div>
@@ -76,7 +84,7 @@
                     <img src="/images/clock.svg" alt="">
                     <div class="header-info">
                         <p>Monday - Friday</p>
-                        <p>9am - 8pm</p>
+                        <p>8am - 8pm</p>
                     </div>
                 </div>
             </div>
@@ -119,6 +127,7 @@
                 </div>
             </div>
         </nav>
+        <img class="nav-bubbles" src="/images/bubbles3d-nav-crop.png" alt="">
     </header>
         
         <main id="main">
@@ -133,16 +142,18 @@
                     <div class="heroText">
                         <h1 id="home-h">Professional House Cleaning Services</h1>
         
-                        <h2 id="home-p">Done N' Dusted Services offers the bets cleaning services for condos, houses, AirBNB's, commercial properties, and apartments, and all types of maid services.</h2>
+                        <h2 id="home-p">Done N' Dusted Services offers the best cleaning services for condos, houses, AirBNB's, commercial properties, and apartments, and all types of maid services.</h2>
         
-                        <button id="herobutton2" class="button-solid quote-button" onclick="location.href='/html/services.html'" type="button">
-                            OUR SERVICES</button>
+                        <button id="herobutton2" class="button-solid quote-button bubbly-button" onclick="location.href='/html/services.html'" type="button">
+                            Our Services</button>
         
-                        <button id="herobutton" class="button-transparent about-button" onclick="location.href='/html/about.html'" type="button">
-                            ABOUT US</button>
+                        <button id="herobutton" class="button-transparent about-button bubbly-button" onclick="location.href='/html/about.html'" type="button">
+                            About Us</button>
                     </div>
                 </div>
-                <div class="clippy"></div>
+                <img aria-hidden="true" class="bubbles mobile" src="/images/bubbles3d-no-float.png" alt="">
+                <img aria-hidden="true" class="bubbles tablet" src="/images/bubbles-3d-full.svg" alt="">
+                <img aria-hidden="true" class="bubbles desktop" src="/images/bubbles-3d-full.svg" alt="">
             </section>
 
     <!-- ============================================ -->
@@ -154,24 +165,24 @@
             <div class="card-item">
                 <div class="card-img"><img aria-hidden="true" src="/images/maid-service.svg" alt=""></div>
                 <h2>Maid Services</h2>
-                <p>We offer a full maid service to take care of every room and surface in your home.</p>
-                <button class="button-solid" onclick="location.href='/html/contact.html'" type="button">
+                <p>Professionals who will come in and provide an above board service and/or cater to any specific needs you may have</p>
+                <button class="button-solid bubbly-button" onclick="location.href='/html/contact.html'" type="button">
                     Call Now
                 </button>
             </div>
             <div class="card-item">
                 <div class="card-img"><img aria-hidden="true" src="/images/maid-clock.svg" alt=""></div>
                 <h2>Discounts</h2>
-                <p>Scheduled cleanings get discounted higher the more frequent our visits are.</p>
-                <button class="button-solid" onclick="location.href='/html/contact.html'" type="button">
+                <p>Scheduled cleanings get discounted higher the more frequent our visits are. The more we clean, the more you save!</p>
+                <button class="button-solid bubbly-button" onclick="location.href='/html/contact.html'" type="button">
                     Call Now
                 </button>
             </div>
             <div class="card-item">
-                <div class="card-img"><img aria-hidden="true" src="/images/house-cleaners.svg" alt=""></div>
-                <h2>House Cleaners</h2>
-                <p>Whether you need help picking up and cleaning or a full top to bottom overhaul.</p>
-                <button class="button-solid" onclick="location.href='/html/contact.html'" type="button">
+                <div class="card-img"><img aria-hidden="true" src="/images/earth.svg" alt=""></div>
+                <h2>Safe & Natural</h2>
+                <p>We only use environmentally safe cleaners and chemicals in your home. We believe in a clean home and clean environment.</p>
+                <button class="button-solid bubbly-button" onclick="location.href='/html/contact.html'" type="button">
                     Call Now
                 </button>
             </div>
@@ -185,10 +196,10 @@
                 <img src="/images/square-crop4.jpg"  width="360" height="360" alt="black cabinets with black walled kitchen and light brown counters">
             </div>
             <div class="right">
-                <p>About Done N' Dusted Services</p>
+                <span>Done n' Dusted</span>
                 <h2>Seattle's House Cleaning Experts</h2>
-                <h3>Done & Dusted Cleaning Services was started by Meloney van Zyl with the aim of providing a higher standard cleaning service for clients. Meloney has a background as a highly regarded and sought-after Chief Stewardess on Super Yachts, where she managed the interior and hotel services team for high end owners and charter guests aboard some of the most prestigious motor yachts around the world. <br><br>This unique experience gave Meloney an eye for detail from the many years of experience maintaining and cleaning high end furniture and a variety of construction materials.
-                </h3>
+                <p>Done & Dusted Cleaning Services was started by Meloney van Zyl with the aim of providing a higher standard cleaning service for clients. Meloney has a background as a highly regarded and sought-after Chief Stewardess on Super Yachts, where she managed the interior and hotel services team for high end owners and charter guests aboard some of the most prestigious motor yachts around the world. <br><br>This unique experience gave Meloney an eye for detail from the many years of experience maintaining and cleaning high end furniture and a variety of construction materials.
+                </p>
                 <div class="icon-group">
                     <div class="icons">
                         <img src="/images/stars.svg" alt="">
@@ -217,59 +228,49 @@
 
     <section id="services" class="section">
         <div class="container">
+            <span class="services-header">Our Services</span>
             <div class="service-group">
                 <div class="service">
                     <h2>Kitchen Cleaning</h2>
                     <p>Cleaning surfaces and appliances with dusting and wiping.</p>
-                    <div class="service-icon">
+                    <div aria-hidden="true" class="service-icon">
                         <img src="/images/kitchen-service.svg" alt="">
                     </div>
                 </div>
                 <div class="service">
                     <h2>Deep Cleaning</h2>
                     <p>Remove soap scum, window cleanings, baseboards, trim, blinds, & more.</p>
-                    <div class="service-icon">
+                    <div aria-hidden="true" class="service-icon">
                         <img src="/images/soap.svg" alt="">
                     </div>
                 </div>
                 <div class="service">
                     <h2>Standard Cleanings</h2>
-                    <p>Change linens, wipe everything down, vacuum, mop, bathrooms, & more.</p>
-                    <div class="service-icon">
+                    <p>Linens, all surfaces sanitized, vacuum, mop, steam, bathroom detail & more</p>
+                    <div aria-hidden="true" class="service-icon">
                         <img src="/images/standard-cleaning.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="centerpiece">
-                <div class="center-image">
-                    <img aria-hidden="true" src="/images/before-after1.jpg" alt="">
-                   
-                    <div class="experience">
-                        <div aria-hidden="true" class="border"></div>
-                        <p><span>15</span> Years <br>Experience</p>
                     </div>
                 </div>
             </div>
 
             <div class="service-group">
                 <div class="service">
-                    <h2>Trash removal</h2>
-                    <p>Emptying and removing recycling and trash arund the house.</p>
+                    <h2>Move In/Out Cleans</h2>
+                    <p>Absolutely every surface will be touched and cleaned to perfection.</p>
                     <div aria-hidden="true" class="service-icon">
-                        <img src="/images/trash.svg" alt="">
+                        <img src="/images/moving-truck.svg" alt="">
                     </div>
                 </div>
                 <div class="service">
                     <h2>Stain Removal</h2>
-                    <p>Stain removals for furniture and carpet cleaning around the house.</p>
+                    <p>Spot treatment for furniture and carpet cleaning around the house.</p>
                     <div aria-hidden="true" class="service-icon">
                         <img src="/images/chair.svg" alt="">
                     </div>
                 </div>
                 <div class="service">
                     <h2>Stone Polish & Seal</h2>
-                    <p>We know how to proeprly clean and seal granite, marble, and other materials</p>
+                    <p>We know how to properly clean and seal granite, marble, and other materials.</p>
                     <div aria-hidden="true" class="service-icon">
                         <img src="/images/polish.svg" alt="">
                     </div>
@@ -285,12 +286,23 @@
     <section id="team" class="section">
         <div class="container">
             <div class="team-top">
+                <span class="team-h2">Our Clean Team</span>
                 <div class="team-left">
-                    <span>Our Clean Team</span>
                     <h2><strong>We have an expert</strong> waiting to serve you.</h2>
                 </div>
                 <h3>We are passionate about what we do and love doing it.  Let one of our team members show you our definition of quality.</h3>
                 <div class="team-container">
+                    <div class="expert">
+                        <div class="picture melony"></div>
+                        <div class="expert-info">
+                            <h3>Melony van Zyl</h3>
+                            <h4>Owner/Operator</h4>
+                            <a href="/html/contact.html"><img src="/images/smartphone.svg" alt=""></a>
+                        </div>
+                        <div aria-hidden="true" class="textcontainer">
+                            <span class="particletext bubbles">...........................</span>
+                        </div>
+                    </div>
                     <div class="expert">
                         <div class="picture chelsea"></div>
                         <div class="expert-info">
@@ -298,13 +310,8 @@
                             <h4>Cleaning Specialist</h4>
                             <a href="/html/contact.html"><img src="/images/smartphone.svg" alt=""></a>
                         </div>
-                    </div>
-                    <div class="expert">
-                        <div class="picture melony"></div>
-                        <div class="expert-info">
-                            <h3>Melony van Zyl</h3>
-                            <h4>Owner/Operator</h4>
-                            <a href="/html/contact.html"><img src="/images/smartphone.svg" alt=""></a>
+                        <div aria-hidden="true" class="textcontainer">
+                            <span class="particletext bubbles">...........................</span>
                         </div>
                     </div>
                     <div class="expert">
@@ -313,6 +320,9 @@
                             <h3>Erica Lastname</h3>
                             <h4>Cleaning Specialist</h4>
                             <a href="/html/contact.html"><img src="/images/smartphone.svg" alt=""></a>
+                        </div>
+                        <div aria-hidden="true" class="textcontainer">
+                            <span class="particletext bubbles">...........................</span>
                         </div>
                     </div>
                 </div>
@@ -379,11 +389,11 @@
         </div>
         <div class="card-section container">
             <div class="card-section-item">
-                <h3>12+</h3>
+                <h3>15+</h3>
                 <p>Years Experience</p>
             </div>
             <div class="card-section-item">
-                <h3>1000's</h3>
+                <h3>100's</h3>
                 <p>Satisfied Customers</p>
             </div>
             <div class="card-section-item">
@@ -409,41 +419,41 @@
             </div>
             <div class="review-group">
                 <div class="review">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minima consequuntur alias. Necessitatibus nihil, odio consequatur fugit aspernatur quos inventore?
+                    <p>Moving out of my apartment in downtown Seattle and not sure what to do about cleaning the place. I contacted Done and Dusted and they did a phenomenal job and in a timely manner. Over and beyond what I would expect. Made me realize that I was a slob in a sense. They did more than we talked about and without extra charges. I would recommend them in any and all cleaning services.
                     <div class="info">
                         <img aria-hidden="true" src="/images/square.png" alt="" width="60" height="60">
                         <div class="text-group">
-                            <h3>Eric B.</h3>
+                            <h3>Mark B.</h3>
                             <p>Seattle, WA</p>
                         </div>
                     </div>
                 </div>
                 <div class="review">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis inventore magnam cumque! Ex, laudantium labore. Culpa, quisquam harum. Tempora, modi!</p>
+                    <p>This was amazing work of restoration of a 2400 sq ft property that was absolutely wrecked by the previous tenants who were there for over 7 years. The place looked like it had been used as a frat party house for the whole time it was rented. Absolutely Gross ..... but Done and Dusted was able to make the place beautiful again. I am so grateful that I met Meloney and her excellent crew of Done and Dusted Thank You!</p>
                     <div class="info">
                         <img aria-hidden="true" src="/images/square.png" alt="" width="60" height="60">
                         <div class="text-group">
-                            <h3>Heather S.</h3>
+                            <h3>Michael F.</h3>
+                            <p>Mountlake Terrace, WA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <p>I am a repeat customer of them for my short-term rental house, it has been half a year and I have absolutely zero complaints regarding the service they provided. Meloney has been doing an extraordinary job the whole time by insisting on the highest standards and providing professional cleaning service. She is the best cleaning person I have ever worked with and I would highly recommend her cleaning services to anyone.</p>
+                    <div class="info">
+                        <img aria-hidden="true" src="/images/square.png" alt="" width="60" height="60">
+                        <div class="text-group">
+                            <h3>Pingpan C.</h3>
                             <p>Seattle, WA</p>
                         </div>
                     </div>
                 </div>
                 <div class="review">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ad! Delectus magni ipsam tenetur recusandae placeat animi nisi, error aliquid?</p>
+                    <p>The owner Melanie is all about paying attention to all the details. She is not done until the whole project is done leaving everything clean and spotless. She takes the time to get to know your cleaning needs and is very personable and friendly. I appreciated her environmentally conscious cleaning process of using steam and attentiveness with utilizing disinfectants. She ensures a safe but sanitary clean. I would use this company again and encourage others to also because they are a friendly, professional and thorough team.</p>
                     <div class="info">
                         <img aria-hidden="true" src="/images/square.png" alt="" width="60" height="60">
                         <div class="text-group">
-                            <h3>Steve H.</h3>
-                            <p>Seattle, WA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sunt beatae, quo impedit praesentium ullam accusamus quasi voluptates officia facere?</p>
-                    <div class="info">
-                        <img aria-hidden="true" src="/images/square.png" alt="" width="60" height="60">
-                        <div class="text-group">
-                            <h3>Ben K.</h3>
+                            <h3>Lindsay M.</h3>
                             <p>Seattle, WA</p>
                         </div>
                     </div>
@@ -459,7 +469,7 @@
     <section id="gallery">
         <div class="gallery-topper">
             <h2>Our Portfolio</h2>
-            <button class="button-solid gallery-button" onclick="location.href='/html/portfolio.html'" type="button">
+            <button class="button-solid gallery-button bubbly-button" onclick="location.href='/html/portfolio.html'" type="button">
                 VIEW FULL GALLERY</button>
         </div>
         <div class="gallery">
@@ -626,5 +636,6 @@
     </script>
 
     <script defer src="app.js"></script>
+    <script defer src="bubbles.js"></script>
 </body>
 </html>

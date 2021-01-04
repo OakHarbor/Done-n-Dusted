@@ -1,0 +1,347 @@
+@media screen and (min-width: 375px) {
+
+    #hero {
+        height: 900px;
+    }
+
+}
+
+@media screen and (min-width: 400px) {
+
+    #hero {
+        height: 1000px;
+    }
+
+    .bubbles {
+        left: -950px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -400px;
+        width: 300%;
+        left: -350px;
+    }
+
+}
+
+@media screen and (min-width: 460px) {
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -500px;
+        width: 300%;
+        left: -350px;
+    }
+}
+
+@media screen and (min-width: 551px) {
+
+    #hero {
+        height: 1100px;
+    }
+
+    .heroText {
+        max-width: 400px;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -600px;
+        width: 300%;
+        left: -350px;
+    }
+
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 620px) {
+
+    #hero {
+        height: 1200px;
+    }
+
+    .heroText {
+        max-width: 500px;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -700px;
+        width: 300%;
+        left: -350px;
+    }
+
+    .top-card {
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -500px;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    #hero {
+        height: 1300px;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    .bubbles {
+        bottom: -600px;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+
+    #hero {
+        height: 1300px !important;
+    }
+
+    .bubbles {
+        bottom: -700px;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        padding-top: 430px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #hero {
+        height: 1300px !important;
+    }
+
+    .bubbles {
+        bottom: -200px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        padding-top: 430px !important;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    #hero {
+        height: 1400px !important;
+    }
+
+    .heroText {
+        padding-top: 0px !important;
+        margin-top: -100px !important;
+    }
+
+    .bubbles {
+        bottom: -200px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        padding-top: 430px !important;
+    }
+}
+
+@media screen and (min-width: 1580px) {
+
+    #hero {
+        height: 1400px !important;
+    }
+
+    .heroText {
+        margin-top: -100px !important;
+    }
+
+    .bubbles {
+        bottom: -300px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        padding-top: 430px !important;
+    }
+}
+
+@media screen and (min-width: 1750px) {
+
+    .bubbles {
+        bottom: -350px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        padding-top: 301px !important;
+    }
+}
+
+@media screen and (min-width: 1950px) {
+
+    .bubbles {
+        bottom: -440px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .services-group {
+        position: relative;
+        z-index: 1000000000;
+    }
+}
+
+@media screen and (min-width: 2130px) {
+
+    .bubbles {
+        bottom: -540px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 2320px) {
+
+    .bubbles {
+        bottom: -640px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 2550px) {
+
+    .bubbles {
+        bottom: -740px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 2720px) {
+
+    .bubbles {
+        bottom: -840px !important;
+        width: 200%;
+        left: -450px;
+    }
+
+    .top-card {
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (min-width: 2920px) {
+
+    .bubbles {
+        bottom: -940px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 3110px) {
+
+    .bubbles {
+        bottom: -1040px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 3300px) {
+
+    .bubbles {
+        bottom: -1140px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 3500px) {
+
+    .bubbles {
+        bottom: -1240px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 3650px) {
+
+    .bubbles {
+        bottom: -1340px !important;
+        width: 200%;
+        left: -450px;
+    }
+}
+
+@media screen and (min-width: 3880px) {
+
+    .bubbles {
+        bottom: -1440px !important;
+        width: 200%;
+        left: -450px;
+    }
+}

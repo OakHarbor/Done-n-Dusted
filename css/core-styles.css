@@ -15,12 +15,24 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
+html.clicked {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family:'billy_ohioregular';
+    src: url('../fonts/Billy Ohio.tff') format('woff2'),
+         url('../fonts/billy_ohio-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
-    --primary: #007cfb;
+    --primary: #2b388f;
     --dark: #964102;
-    --light: #febc8b;
+    --light: #26a9e0;
     --secondary: #32cf02;
     --secondaryLight: #406882;
     --secondaryDark: #208701;
@@ -34,16 +46,20 @@ body, html {
 	overflow-x: hidden !important;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 p, a, li, span {
-	font-family: 'rubik', sans-serif;
 	color: #555;
     margin: 0;
     line-height: 24px;
     font-size: 1em;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     margin: 0;
     line-height: 1.2em;
 }
@@ -59,8 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-wrapper {
-	background: #fff;
-    border-bottom: 3px solid var(--primary);
     height: 130px;
 }
 
@@ -77,8 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Buttons */
 .button-solid {
-	background: var(--primary);
-	border-radius: 3px;
+	background: var(--light);
 	border: none;
 	color: #fff;
 	width: auto;
@@ -91,11 +104,13 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
-    border: 1px solid var(--primary);
 }
 
 button {
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-radius: 25px;
 }
 
 button:hover {
@@ -105,8 +120,7 @@ button:hover {
 .button-solid:hover {
     color: var(--primary);
     background: #fff;
-	border: 1px solid var(--primary);
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .button-transparent {
@@ -122,7 +136,6 @@ button:hover {
     text-decoration: none;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
-    border-radius: 3px;
     white-space: nowrap;
     height: 50px;
     -webkit-transition: .3s ease;
@@ -159,7 +172,7 @@ button:hover {
     margin: 0;
     overflow: visible;
     position: relative;
-    z-index: 2000;
+    z-index: 999000;
 }
 .hamburger:hover {
     opacity: 0.7;
@@ -170,7 +183,7 @@ button:hover {
     cursor: pointer;
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
-    background-color: #000;
+    background-color: #fff;
 }
 .hamburger-box {
     width: 30px;
@@ -187,7 +200,7 @@ button:hover {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 4px;
     position: absolute;
     -webkit-transition-property: -webkit-transform;
@@ -304,11 +317,28 @@ button:hover {
 }
 
 /* Top Mobile Navigation */
+
+.nav-bubbles {
+    position: absolute;
+    transform: rotate(180deg);
+    top: -40px;
+    z-index: 90;
+    width: 100%;
+}
+
 .mobile-wrapper {
     height: 70px;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-list {
+    display: none;
 }
 
 .mobile-nav {
@@ -323,31 +353,59 @@ button:hover {
 	    -ms-flex-pack: center;
 	        justify-content: center;
     height: 100%;
-    z-index: 100;
+    z-index: 900000000000;
 }
 
 .hamburger {
-	position: absolute;
-    right: 2em;
+	position: fixed;
+    right: 20px;
     top: 22px;
+    -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
+    z-index: 900000000000;
 }
+
+.button-back {
+    display: block;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: rgb(43,56,143);
+    background: -moz-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    top: 50%;
+    left: 50%;
+    opacity: 1 !important;
+    transform: translate(-50%, -53%);
+    -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Navigation Links */
 
 .mobile-wrapper img {
-	height: 88px;
+    height: 100px;
+    margin-top: 40px;
 }
 
 .navbar-menu {
-	background: #f5f5f5;
+	background: rgb(43,56,143);
+    background: -moz-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    border-radius: 0 0 0 100%;
 	width: 0;
-	position: absolute;
+    position: fixed;
+    top: 0;
 	right: 0;
 	height: 100%;
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    z-index: 11100;
+    z-index: 800000000000;
     max-width: 1700px;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -356,9 +414,10 @@ button:hover {
 
 .side-nav {
     position: relative;
-	padding: 40px 0;
+	padding: 180px 0 40px;
 	position: absolute;
-	right: 2em;
+    right: 2em;
+    z-index: 90000;
 	-webkit-transition: .3s ease;
 	-o-transition: .3s ease;
 	transition: .3s ease;
@@ -387,11 +446,12 @@ button:hover {
 	     -o-transition-delay: .2s;
 	        transition-delay: .2s;
 	opacity: 0;
-	visibility: hidden;
+    visibility: hidden;
+    color: #fafafa;
 }
 
 .active-menu {
-	border-right: 4px solid var(--primary);
+	border-right: 4px solid var(--light);
 	color: var(--primary);
 }
 
@@ -458,11 +518,11 @@ button:hover {
 }
 
 .heroText h1 {
-	font-size: 1.8em;
+    font-size: 1.8em;
+    width: auto;
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
-	overflow-y: hidden;
     margin: 0;
     line-height: 1.3em;
 }
@@ -527,8 +587,50 @@ button:hover {
     width: 200px;
 }
 
+@media screen and (max-width: 330px) {
+
+    .side-nav {
+        padding-top: 140px;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+
+    .mobile-wrapper img {
+        height: 130px;
+        margin-top: 70px;
+    }
+
+    .nav-bubbles {
+        top: -59px;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+
+    .mobile-wrapper img {
+        height: 130px;
+        margin-top: 70px;
+    }
+
+    .nav-bubbles {
+        top: -89px;
+    }
+
+}
+
 /* Tablets */
-@media screen and (min-width: 500px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .side-nav a {
+        font-size: 30px;
+    }
+
+    .side-nav ul li {
+        margin-bottom: 45px;
+    }
 
     /*-- -------------------------- -->
     <---           CONTACT          -->
@@ -583,7 +685,6 @@ button:hover {
     .mobile-nav {
         max-width: 100%;
     }
-    
 
     /*-- -------------------------- -->
     <---           HERO             -->
@@ -622,9 +723,13 @@ button:hover {
 
     header {
         position: fixed;
-        z-index: 900000;
+        z-index: 99900000000000;
         top: 0;
         width: 100%;
+    }
+
+    .logo-list {
+        display: block !important;
     }
 
     /* Hidden Elements */
@@ -664,6 +769,7 @@ button:hover {
         text-align: center;
         padding: 60px 0 50px;
         background: #fff;
+        box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.35);
     }
 
     .social-bar {
@@ -847,14 +953,14 @@ button:hover {
 		height: 30px;
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+        display: flex;
+        border-radius: 30px;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
-        border-radius: 5px;
         -webkit-box-sizing: content-box;
                 box-sizing: content-box;
 	}
@@ -929,7 +1035,7 @@ button:hover {
     }
     
     .logo-list img {
-        height: 100px;
+        height: 160px;
         width: auto;
         left: auto;
         position: relative;
