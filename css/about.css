@@ -142,8 +142,8 @@
 <---        ABOUT CONTENT       -->
 <--- -------------------------- -*/
 
-.about-content {
-    margin-top: 30px;
+#about-content {
+    margin-top: 80px;
 }
 
 .about-content-container img {
@@ -151,6 +151,8 @@
     -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
     box-shadow: 0 0 40px rgba(0,0,0,.1);
     border-radius: 5px;
+    position: relative;
+    z-index: 10;
 }
 
 .about-content p {
@@ -353,6 +355,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 150px;
+    }
+    
+    .about-content-container img {
+        margin-bottom: 50px;
+        width: 50%;
     }
 
     .card {
