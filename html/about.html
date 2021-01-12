@@ -2,16 +2,6 @@
 <html lang="en">
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137702322-29"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137702322-29');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,13 +16,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/core-styles.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
     <!-- jQuery -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>About | LNT Handyman Construction Painting | Whidbey Island, WA</title>
+    <title>About | Done n Dusted Services | Seattle, WA</title>
 </head>
 <body>
 
@@ -42,44 +33,83 @@
         <!-- Desktop Navbar -->
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="/images/logo.png" alt="mobile_company_logo" height="60"> 
-
+                <img id="mobile-logo" src="/images/logo-border.png" alt="mobile_company_logo" height="60">
+    
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
                     <span aria-hidden="true" class="hamburger-box">
                         <span aria-hidden="true" class="hamburger-inner"></span>
                     </span>
+                    <span class="button-back"></span>
                 </button>
             </div>
         </div>
-
+    
+        <!-- Social Section -->
+        <div class="social-bar">
+            <div class="container">
+                <img src="/images/facebook.svg" alt="">
+            </div>
+        </div>
+    
+        <!-- Contact Section-->
+        <div class="contact-detail">
+            <div class="left-contact">
+                <div class="contact-box">
+                    <img aria-hidden="true" src="/images/left-call.svg" alt="">
+                    <div class="header-info">
+                        <p>Call For Help</p>
+                        <p>(206) 665-9798</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img aria-hidden="true" src="/images/clock.svg" alt="">
+                    <div class="header-info">
+                        <p>Monday - Friday</p>
+                        <p>8am - 8pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <div class="contact-box">
+                    <img aria-hidden="true" src="/images/mail.svg" alt="">
+                    <div class="header-info">
+                        <p><a href="">Click to Email</a></p>
+                        <p>Email Us!</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img aria-hidden="true" src="/images/pin.svg" alt="">
+                    <div class="header-info">
+                        <p>Seattle</p>
+                        <p>Washington</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
         <!-- ============================================ -->
         <!--                   NAVIGATION                 -->
         <!-- ============================================ -->
-
+    
         <nav>
-            <nav>
-                <div class="navbar-menu">
-                    <div id="side-menu" class=" side-nav">
-                        <img aria-hidden="true" src="/images/logo.png" alt="compnay logo" height="80">
-                        <ul id="on-top" class="navbar-links">
-                            <li class="nav-li"><a href="/index.html">Home</a></li>
-                            <li class="nav-li"><a class="active-menu" href="/html/about.html">About</a></li>
-                            <li class="nav-li"><a href="/index.html#remodeling-services">Services</a></li>
-                            <li class="nav-li"><a href="/html/portfolio.html">Portfolio</a></li>
-                            <li class="nav-li"><a href="/html/contact.html">Contact</a></li>
-                            <li class="nav-li call-us"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 367.633 367.633" style="enable-background:new 0 0 367.633 367.633;" xml:space="preserve" width="512px" height="512px">
-                                    <g>
-                                        <path d="M266.003,0H101.63C86.293,0,73.816,12.476,73.816,27.812v312.01c0,15.335,12.477,27.812,27.813,27.812h164.373  c15.337,0,27.814-12.477,27.814-27.812V27.812C293.816,12.476,281.34,0,266.003,0z M194.844,338.736  c0,2.175-1.763,3.938-3.938,3.938h-14.18c-2.175,0-3.938-1.763-3.938-3.938v-12.604c0-1.279,0.622-2.481,1.669-3.219l7.09-4.993  c1.362-0.959,3.175-0.959,4.537,0l7.09,4.993c1.047,0.737,1.669,1.939,1.669,3.219V338.736z M260.732,300.516H106.9V42.299h153.832  V300.516z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)" />
-                                    </g>
-                                </svg>
-                                Call Us: (206) 602-0493</li>
-                            <li class="nav-li"><button class="button-solid quote-nav-button" onclick="location.href='/html/contact.html'" type="button">
-                                    FREE ESTIMATE</button></li>
-                        </ul>
-                    </div>
+            <div class="navbar-menu">
+    
+                <!-- Navigation Section -->
+                <div id="side-menu" class=" side-nav">
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a href="/index.html">Home</a></li>
+                        <li class="nav-li"><a class="active-menu" href="/html/about.html">About</a></li>
+                        <li class="nav-li"><a href="/index.html#remodeling-services">Services</a></li>
+                        <li class="nav-li logo-list"><a href="/index.html"><img aria-hidden="true" src="/images/logo.png" alt=""></a></li>
+                        <li class="nav-li"><a href="/html/portfolio.html">Portfolio</a></li>
+                        <li class="nav-li"><a href="/html/faq.html">FAQ</a></li>
+                        <li class="nav-li last-li"><a href="/html/contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <img aria-hidden="true" class="nav-bubbles" src="/images/bubbles3d-nav-crop.png" alt="">
     </header>
 
     <main id="main">
@@ -87,14 +117,11 @@
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
-
+    
     <section id="hero">
         <div aria-hidden="true" id="dark"></div>
-        <div class="container">
-            <div class="about-box">
-                <h1>About Us</h1>
-            </div>
-        </div>
+        <h1 id="sub">About Us</h1>
+        <img aria-hidden="true" class="bubbles" src="/images/bubbles-3d-full.svg" alt="">
     </section>
 
     <!-- ============================================ -->
@@ -106,9 +133,9 @@
             <div class="card">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="svg1" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512"><g><path d="m21 17c0 2.206 1.794 4 4 4s4-1.794 4-4-1.794-4-4-4-4 1.794-4 4zm6 0c0 1.103-.897 2-2 2s-2-.897-2-2 .897-2 2-2 2 .897 2 2z"/><path d="m63 31v-6h-2.465l-8-12h-14.121l-11-11c-1.289-1.29-3.539-1.29-4.828 0l-20.879 20.879c-.456.456-.707 1.062-.707 1.707 0 1.331 1.083 2.414 2.414 2.414h1.586v22h-1c-1.654 0-3 1.346-3 3v8c0 1.654 1.346 3 3 3h24.303l6-4h17.283l1.121 1.121c.566.567 1.32.879 2.122.879h5.171c1.654 0 3-1.346 3-3v-4c0-1.302-.839-2.402-2-2.816v-20.184zm-2-2h-16v-2h16zm-10 28h-16v-2h16zm-24-6v2h-14c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2h14v2h-18v-10zm-6-2h-8v-16h8zm6 8h-14v-2h14zm2-5.132 4 2.667v2.93l-4 2.667zm22.465-36.868 6.667 10h-9.167c.023-.135.035-.273.035-.414 0-.645-.251-1.251-.707-1.707l-7.879-7.879zm-48.465 9.586c0-.109.044-.216.121-.293l20.879-20.879c.263-.263.628-.414 1-.414s.737.151 1 .414l20.879 20.879c.077.077.121.184.121.293 0 .228-.186.414-.414.414h-1.829l-19.757-19.757-19.757 19.757h-1.829c-.228 0-.414-.186-.414-.414zm38.929.414h-33.858l16.929-16.929zm-34.929 2h36v26h-8.697l-6-4h-5.303v-18h-12v18h-4zm-4 33v-8c0-.551.449-1 1-1h3v10h-3c-.551 0-1-.449-1-1zm58-2c0 .551-.449 1-1 1h-5.171c-.267 0-.519-.104-.708-.293l-1.121-1.121v-3.172l1.121-1.121c.189-.189.441-.293.708-.293h5.171c.551 0 1 .449 1 1zm-2-7h-4.171c-.801 0-1.555.312-2.122.879l-1.121 1.121h-6.586v-22h14z"/><path d="m39 31h-14v14h14zm-2 6h-4v-4h4zm-6-4v4h-4v-4zm-4 6h4v4h-4zm6 4v-4h4v4z"/><path d="m57 47v-12h-10v12zm-8-10h6v8h-6z"/></g></svg>
                 <div class="card-content">
-                    <h2>Honest And Hardworking</h2>
-                    <p>We are always upfront and honest in our pricing and our work.</p>
-                    <button class="button-solid card-button" onclick="location.href='contact.html'" type="button">
+                    <h2>Honesty & Trust</h2>
+                    <p>They are the core of our business and how we operate every day.</p>
+                    <button class="button-solid" onclick="location.href='contact.html'" type="button">
                         CONTACT
                     </button>
                 </div>
@@ -116,9 +143,9 @@
             <div class="card">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="svg2" height="512pt" viewBox="0 -3 512 512" width="512pt"><path d="m502 250.539062c5.523438 0 10-4.476562 10-10v-121.777343c0-5.523438-4.476562-10-10-10h-99.101562v-48.496094h4.273437c5.519531 0 10-4.480469 10-10v-40.265625c0-5.523438-4.480469-10-10-10h-83.308594c-5.519531 0-10 4.476562-10 10v40.265625c0 5.519531 4.480469 10 10 10h4.273438v48.496094h-118.109375l-35.285156-36c-1.882813-1.917969-4.457032-3-7.140626-3-2.6875 0-5.261718 1.082031-7.140624 3l-157.601563 160.777343c-3.867187 3.945313-3.804687 10.277344.140625 14.144532 3.945312 3.863281 10.273438 3.800781 14.140625-.144532l14.164063-14.449218v209.558594h-21.304688c-5.523438 0-10 4.480468-10 10v43.113281c0 5.519531 4.476562 10 10 10h492c5.523438 0 10-4.480469 10-10v-43.113281c0-5.519532-4.476562-10-10-10h-14.472656v-192.109376zm-168.136719-230.539062h63.308594v20.265625h-63.308594zm49.035157 40.265625v79.992187h-34.757813l-.003906-79.992187zm-54.761719 68.496094v21.496093c0 4.835938 3.425781 8.867188 7.984375 9.796876.652344.132812 1.328125.207031 2.019531.207031h54.757813c3.796874 0 7.101562-2.117188 8.796874-5.234375.769532-1.417969 1.207032-3.042969 1.207032-4.769532v-21.496093h89.097656v101.777343h-162.597656l-99.765625-101.777343zm50.472656 208.652343v105.234376h-26.53125v-105.234376zm48.53125 0v105.234376h-28.53125v-105.234376zm-95.0625 105.234376h-28.183594v-105.234376h28.183594zm159.921875 43.113281h-472v-23.113281h102.207031c5.578125.191406 10.386719-4.464844 10.339844-10.058594-.046875-5.667969-4.777344-9.933594-10.335937-9.941406h-70.90625v-229.960938l116.296874-118.640625 116.296876 118.640625v229.960938h-71.019532c-5.53125-.175782-10.199218 4.320312-10.324218 9.832031-.128907 5.605469 4.707031 10.367187 10.320312 10.167969h279.125zm-44.859375-43.113281v-192.109376h20.386719v192.109376zm-20-125.234376h-123.246094v-84.324218l13.160157 13.425781c2.273437 2.316406 4.785156 4.023437 8.167968 4.023437h101.917969zm0 0"/><path d="m165.292969 217.359375c20.792969 0 37.710937-16.914063 37.710937-37.710937 0-20.792969-16.917968-37.710938-37.710937-37.710938-20.796875 0-37.714844 16.917969-37.714844 37.710938 0 20.796874 16.917969 37.710937 37.714844 37.710937zm0-55.421875c9.765625 0 17.710937 7.945312 17.710937 17.714844 0 9.765625-7.945312 17.710937-17.710937 17.710937-9.769531 0-17.714844-7.945312-17.714844-17.710937 0-9.769532 7.945313-17.714844 17.714844-17.714844zm0 0"/><path d="m105.023438 352.210938h123.109374c5.523438 0 10-4.480469 10-10v-69.5625c0-5.523438-4.476562-10-10-10h-123.109374c-5.523438 0-10 4.476562-10 10v69.5625c0 5.523437 4.476562 10 10 10zm113.109374-20h-21.035156v-49.5625h21.035156zm-41.035156 0h-21.039062v-49.5625h21.039062zm-62.074218-49.5625h21.035156v49.5625h-21.035156zm0 0"/><path d="m250.222656 388.148438c0-5.519532-4.476562-10-10-10h-149.859375c-5.523437 0-10 4.480468-10 10 0 5.523437 4.476563 10 10 10h149.859375c5.523438 0 10-4.476563 10-10zm0 0"/><path d="m176.828125 448.820312c-1.636719-3.925781-5.6875-6.445312-9.941406-6.136718-4.152344.300781-7.742188 3.21875-8.894531 7.21875-1.148438 4 .386718 8.457031 3.785156 10.871094 3.371094 2.398437 7.925781 2.464843 11.371094.1875 3.945312-2.605469 5.460937-7.792969 3.679687-12.140626zm0 0"/></svg>
                 <div class="card-content">
-                    <h2>Skilled Craftsman</h2>
-                    <p>We don't just hire any employee, we hire skilled craftsman in their trade.</p>
-                    <button class="button-solid card-button" onclick="location.href='contact.html'" type="button">
+                    <h2>Attention to Detail</h2>
+                    <p>We aren't satisfied by doing the bare minimum - our goal is to impress!</p>
+                    <button class="button-solid" onclick="location.href='contact.html'" type="button">
                         CONTACT
                     </button>
                 </div>
@@ -127,8 +154,8 @@
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="svg3" height="512pt" viewBox="0 -3 512 512" width="512pt"><path d="m502 250.539062c5.523438 0 10-4.476562 10-10v-121.777343c0-5.523438-4.476562-10-10-10h-99.101562v-48.496094h4.273437c5.519531 0 10-4.480469 10-10v-40.265625c0-5.523438-4.480469-10-10-10h-83.308594c-5.519531 0-10 4.476562-10 10v40.265625c0 5.519531 4.480469 10 10 10h4.273438v48.496094h-118.109375l-35.285156-36c-1.882813-1.917969-4.457032-3-7.140626-3-2.6875 0-5.261718 1.082031-7.140624 3l-157.601563 160.777343c-3.867187 3.945313-3.804687 10.277344.140625 14.144532 3.945312 3.863281 10.273438 3.800781 14.140625-.144532l14.164063-14.449218v209.558594h-21.304688c-5.523438 0-10 4.480468-10 10v43.113281c0 5.519531 4.476562 10 10 10h492c5.523438 0 10-4.480469 10-10v-43.113281c0-5.519532-4.476562-10-10-10h-14.472656v-192.109376zm-168.136719-230.539062h63.308594v20.265625h-63.308594zm49.035157 40.265625v79.992187h-34.757813l-.003906-79.992187zm-54.761719 68.496094v21.496093c0 4.835938 3.425781 8.867188 7.984375 9.796876.652344.132812 1.328125.207031 2.019531.207031h54.757813c3.796874 0 7.101562-2.117188 8.796874-5.234375.769532-1.417969 1.207032-3.042969 1.207032-4.769532v-21.496093h89.097656v101.777343h-162.597656l-99.765625-101.777343zm50.472656 208.652343v105.234376h-26.53125v-105.234376zm48.53125 0v105.234376h-28.53125v-105.234376zm-95.0625 105.234376h-28.183594v-105.234376h28.183594zm159.921875 43.113281h-472v-23.113281h102.207031c5.578125.191406 10.386719-4.464844 10.339844-10.058594-.046875-5.667969-4.777344-9.933594-10.335937-9.941406h-70.90625v-229.960938l116.296874-118.640625 116.296876 118.640625v229.960938h-71.019532c-5.53125-.175782-10.199218 4.320312-10.324218 9.832031-.128907 5.605469 4.707031 10.367187 10.320312 10.167969h279.125zm-44.859375-43.113281v-192.109376h20.386719v192.109376zm-20-125.234376h-123.246094v-84.324218l13.160157 13.425781c2.273437 2.316406 4.785156 4.023437 8.167968 4.023437h101.917969zm0 0"/><path d="m165.292969 217.359375c20.792969 0 37.710937-16.914063 37.710937-37.710937 0-20.792969-16.917968-37.710938-37.710937-37.710938-20.796875 0-37.714844 16.917969-37.714844 37.710938 0 20.796874 16.917969 37.710937 37.714844 37.710937zm0-55.421875c9.765625 0 17.710937 7.945312 17.710937 17.714844 0 9.765625-7.945312 17.710937-17.710937 17.710937-9.769531 0-17.714844-7.945312-17.714844-17.710937 0-9.769532 7.945313-17.714844 17.714844-17.714844zm0 0"/><path d="m105.023438 352.210938h123.109374c5.523438 0 10-4.480469 10-10v-69.5625c0-5.523438-4.476562-10-10-10h-123.109374c-5.523438 0-10 4.476562-10 10v69.5625c0 5.523437 4.476562 10 10 10zm113.109374-20h-21.035156v-49.5625h21.035156zm-41.035156 0h-21.039062v-49.5625h21.039062zm-62.074218-49.5625h21.035156v49.5625h-21.035156zm0 0"/><path d="m250.222656 388.148438c0-5.519532-4.476562-10-10-10h-149.859375c-5.523437 0-10 4.480468-10 10 0 5.523437 4.476563 10 10 10h149.859375c5.523438 0 10-4.476563 10-10zm0 0"/><path d="m176.828125 448.820312c-1.636719-3.925781-5.6875-6.445312-9.941406-6.136718-4.152344.300781-7.742188 3.21875-8.894531 7.21875-1.148438 4 .386718 8.457031 3.785156 10.871094 3.371094 2.398437 7.925781 2.464843 11.371094.1875 3.945312-2.605469 5.460937-7.792969 3.679687-12.140626zm0 0"/></svg>
                 <div class="card-content">
                     <h2>All In One Service</h2>
-                    <p>We can assist in the design, planning, and installation of your new landscaping project.</p>
-                    <button class="button-solid card-button" onclick="location.href='/index.html#landscaping-services'" type="button">
+                    <p>Anything you need done - just ask!  We take care of all parts of the house.</p>
+                    <button class="button-solid " onclick="location.href='/index.html#landscaping-services'" type="button">
                         OUR SERVICES
                     </button>
                 </div>
@@ -142,10 +169,10 @@
 
     <section id="about-content" class="section">
         <div class="about-content-container container">
-            <img src="/images/yard-mobile.jpg" alt="nice house with a green lawn">
+            <img src="/images/living-room2.jpg" alt="nice house with a green lawn">
             <div class="about-content">
-                <p>LNT Handyman Construction</p>
-                <h2>Experienced home renovators for Oak Harbor & Whidbey Island</h2>
+                <p>Done n Dusted Services</p>
+                <h2>Experienced home cleaning specialists in Seattle WA</h2>
                 <p>
                     My name is Les Higgins, I reside here on Whidbey Island in Washington State for as long as I can remember. I have been in the Labors Union for over 20 years working with contractors on countless projects and construction sites doing everything from complete demolition to starting a project from the foundation and up. In those 20 years I think I can confidently say I have seen almost anything when it comes to commercial and residential construction. Even if I haven't seen it, I know I have the right experience and know-how to get the job done.
                 </p>
@@ -153,8 +180,8 @@
                     After 20 years I decided it was time to get into business for myself and continue to do what I love, but as my own boss and company. Since 2015 LNT Handyman Construction has been providing Whidbey Island with the best service and best quality work as a general contractor. I love what I do and I hope I get the chance to share my craft with you and get that project done you swore to yourself you were going to finish last year.
                 </p>
                 <ul>
-                    <li>License Number: 1059991</li>
-                    <li>Professional Home Remodels</li>
+                    <li>Dependable</li>
+                    <li>Professional</li>
                     <li>Satisfaction Guaranteed</li>
                 </ul>
             </div>
@@ -173,7 +200,7 @@
                     CALL NOW
                 </button>
             </div>
-            <img aria-hidden="true" src="/images/image-19-crop.jpg" alt="">
+            <img aria-hidden="true" src="/images/room-crop.jpg" alt="">
         </div>
     </section>
 
@@ -288,26 +315,26 @@
     <footer>
         <div class="footer-container container">
             <div class="footer-item item-4">
-                <img src="/images/logo.png" alt="LNT Handyman Construction logo">
+                <img src="/images/logo.png" alt="Done N' Dusted Services logo">
             </div>
             <div class="footer-item item-2">
                 <h2>Services</h2>
                 <div aria-hidden="true" class="line"></div>
                 <div class="item-content">
-                    <p>Concrete Services</p>
-                    <p>Kitchen Remodels</p>
-                    <p>Bathroom Remodels</p>
-                    <p>Home renovations</p>
-                    <p>Fence and Decks</p>
+                    <p>Complete Home Cleaning</p>
+                    <p>Maid Services</p>
+                    <p>Scheduled Cleanings</p>
+                    <p>Residential Cleaners</p>
+                    <p>Full Service Cleaning</p>
                 </div>
             </div>
             <div class="footer-item item-3">
                 <h2>Navigation</h2>
                 <div aria-hidden="true" class="line"></div>
                 <div class="item-content">
-                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="index.html">Home</a></p>
                     <p><a href="/html/about.html">About</a></p>
-                    <p><a href="/index.html#remodeling-services">Services</a></p>
+                    <p><a href="#remodeling-services">Services</a></p>
                     <p><a href="/html/portfolio.html">Portfolio</a></p>
                     <p><a href="/html/contact.html">Contact</a></p>
                 </div>
@@ -316,29 +343,41 @@
                 <h2>Contact Us</h2>
                 <div aria-hidden="true" class="line"></div>
                 <div class="item-content">
-                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve" width="15px" height="15px" class=""><g><g>
-                        <g>
-                            <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)"/>
-                        </g>
-                    </g></g> </svg>(206) 602-0493</p>
-                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
-                        <g>
+                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve" width="15px" height="15px" class="">
                             <g>
-                                <path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646     c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719     C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)"/>
-                                <path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885     c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542     C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333     v-268.25C512,132.927,509.583,129.146,505.813,127.406z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)"/>
+                                <g>
+                                    <g>
+                                        <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)" />
+                                    </g>
+                                </g>
                             </g>
-                        </g>
-                    </g></g> </svg>leshiggins29@gmail.com</p>
-                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
-                        <g>
-                            <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)"/>
-                        </g>
-                    </g></g> </svg>Whidbey Island, WA</p>
+                        </svg>(206) 665-9798</p>
+                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class="">
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646     c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719     C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)" />
+                                            <path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885     c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542     C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333     v-268.25C512,132.927,509.583,129.146,505.813,127.406z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>donendustedservices@gmail.com</p>
+                    <p><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" data-original="#000000" class="active-path" data-old_color="#000000" fill="var(--primary)" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>Seattle, WA</span></p>
                 </div>
                 <div class="social">
-                    <a href="https://www.facebook.com/lnthandyman" target="_blank" rel="noopener"><img src="/images/facebook.svg" alt="facebook icon"></a>
-                    <a href="https://www.yelp.com/biz/lnt-handyman-construction-oak-harbor" target="_blank" rel="noopener"><img src="/images/yelp.svg" alt="yelp icon"></a>
-                    <a href="https://g.page/lnthandyman?gm" target="_blank" rel="noopener"><img src="/images/google.svg" alt="google icon"></a>
+                    <a href="" alt="facebook icon"><img aria-hidden="true" src="/images/footer-facebook.svg" alt="yelp icon"></a>
+                    <a href="" target="_blank" rel="noopener"><img aria-hidden="true" src="/images/footer-yelp.svg" alt="yelp icon"></a>
+                    <a href="" target="_blank" rel="noopener"><img aria-hidden="true" src="/images/footer-google.svg" alt="google icon"></a>
                 </div>
             </div>
         </div>

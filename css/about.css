@@ -80,6 +80,7 @@
     -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
     box-shadow: 0 0 40px rgba(0,0,0,.1);
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .card:first-child {
@@ -135,13 +136,6 @@
 
 .card button:hover {
     border: none;
-}
-
-.card button:before {
-    position: absolute;
-    content: url("/images/arrow.svg");
-    right: -20px;
-    top: 18px;
 }
 
 /*-- -------------------------- -->

@@ -4,8 +4,12 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+.nav-bubbles {
+    display: none;
+}
+
 #hero {
-    height: 120px;
+    height: 450px;
     background: url("/images/services-mobile.jpg");
     background-position: top;
     background-repeat: no-repeat;
@@ -30,16 +34,76 @@
     
 }
 
-.about-box h1 {
-    color: #404040;
-    position: relative;
-    z-index: 10000;
-    font-size: 2.250em;
-    font-weight: 500;
-    padding: 20px 30px;
-    width: auto;
-    text-align: center;
+.heroText {
+    width: 100%;
 }
+
+#sub {
+    font-family: 'billy_ohioregular', sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    max-width: 100%;
+    width: 100% !important;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin-top: 40px;
+}
+
+.bubbles {
+    position: absolute;
+    width: 700px;
+    bottom: -250px;
+}
+
+@media screen and (min-width: 600px) {
+
+    #hero {
+        height: 600px;
+    }
+
+    #sub {
+        margin-top: 0;
+    }
+
+    .bubbles {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    #hero {
+        height: 700px;
+    }
+
+    #sub {
+        margin-top: -50px;
+    }
+
+    .bubbles {
+        width: 100%;
+        bottom: -300px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    #hero {
+        height: 550px !important;
+    }
+
+    #sub {
+        margin-top: 200px;
+        font-size: 80px;
+    }
+
+    .bubbles {
+        display: none;
+    }
+}
+
 
 /*-- -------------------------- -->
 <---            FORM            -->
@@ -167,20 +231,9 @@ form p{
     border: none;
 }
 
-#contact button::before {
-    border-color: var(--primary);
-}
-
-#contact button::after {
-    border-color: var(--primary);
-}
-
 #contact button[type="submit"]:hover {
-    opacity: .6;
-    -webkit-transition:background 0.3s ease-in-out;
-    -webkit-transition:background-color 0.3s ease-in-out;
-    -o-transition:background-color 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
+    background: var(--light);
+    color: #fff;
 }
 
 #contact button[type="submit"]:active { 
@@ -225,15 +278,18 @@ form p{
 
 .contact-right {
     padding: 45px 35px;
-    background: var(--secondary);
+    background: var(--primary);
     margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
 }
 
 .contact-right h3 {
     font-size: 1.375em;
     padding-left: 15px;
     margin-bottom: 20px;
-    border-left: 5px solid var(--primary);
+    border-left: 5px solid var(--light);
     color: #fff;
 }
 
@@ -241,6 +297,10 @@ form p{
     margin-bottom: 35px;
     color: #fff;
     opacity: .65;
+}
+
+.email {
+    font-size: .9em;
 }
 
 
@@ -354,7 +414,7 @@ form p{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding-top: 80px;
+        padding-top: 0px;
         padding-bottom: 80px;
     }
 
@@ -378,4 +438,16 @@ form p{
         float: right;
     }
 
+}
+
+@media screen and (min-width: 1100px) {
+
+    #valley-form .container {
+        max-width: 1090px;
+    }
+
+    .contact-right {
+        width: 350px;
+        margin-left: 50px;
+    }
 }

@@ -654,7 +654,7 @@
     margin-bottom: 130px;
     color: var(--primary);
     position: relative;
-    z-index: 9990000000;
+    z-index: 900;
 }
 
 .service-icon {
@@ -916,7 +916,7 @@
 
 .team-h2 {
     color: var(--primary);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: normal;
     display: inline-block;
     vertical-align: middle;
@@ -960,7 +960,7 @@
     color: #3a4268;
     margin-bottom: 70px;
     font-family: 'Roboto', sans-serif;
-    width: 600px;
+    width: auto;
 }
 
 .picture {
@@ -1079,11 +1079,28 @@
 <--- -------------------------- -*/
 
 #contact-form-section {
-    background: url("/images/contact-bg-section-2.jpg");
+    background: url("/images/living-room.jpg");
     background-size: cover;
     background-position: 100% center;
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 70px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#contact-form-section:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(43,56,143);
+    background: -moz-linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
+    background: -webkit-linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
+    background: linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
+    z-index: -1;
 }
 
 form {
@@ -1094,12 +1111,13 @@ form {
 }
 
 .estimate-header {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 54px;
+    font-weight: normal;
     color: #fff;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-family: 'billy_ohioregular', sans-serif;
 }
 
 .estimate-header:after {
@@ -1109,7 +1127,7 @@ form {
     vertical-align: middle;
     height: 2px;
     width: 50px;
-    background: #007cfb;
+    background: #fff;
     margin-left: 20px;
 }
 
@@ -1656,6 +1674,9 @@ form p img {
     background: #082680;
     height: auto;
     padding: 50px 0 40px 0;
+    position: relative;
+    z-index: 1;
+    background-color: #082680;
 }
 
 .gallery-topper h2 {
@@ -1663,6 +1684,9 @@ form p img {
     color: #fff;
     position: relative;
     z-index: 10;
+    font-family: 'billy_ohioregular', sans-serif;
+    font-weight: normal;
+    font-size: 80px;
 }
 
 .gallery {
@@ -1691,6 +1715,7 @@ form p img {
     margin: auto;
     background: #007cfb;
     margin-top: 20px;
+    position: relative;
 }
 
 /*-- -------------------------- -->
@@ -1712,9 +1737,8 @@ form p img {
     border-radius: 7px;
     padding: 30px 20px;
     background: #fff;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 21px -9px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 21px -9px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    box-shadow: 0 4px 33px rgba(0,9,37,.18);
     margin-bottom: 80px;
     position: relative;
     display: -webkit-box;
@@ -2076,6 +2100,15 @@ form p img {
 
     .service-group:last-child {
         margin: 0;
+    }
+
+    #contact-form-section {
+        padding: 100px 0;
+        background-attachment: fixed;
+    }
+
+    .section {
+        padding: 100px 0 !important;
     }
     
 }
@@ -3192,10 +3225,6 @@ form p img {
         height: auto;
         padding-top: 70px;
         padding-bottom: 70px;
-    }
-
-    .gallery-topper h2 {
-        font-size: 2.5em;
     }
 
     .gallery img {

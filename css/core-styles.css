@@ -587,6 +587,11 @@ button:hover {
     width: 200px;
 }
 
+.contact-button:hover {
+    background: var(--light);
+    color: #fff;
+}
+
 @media screen and (max-width: 330px) {
 
     .side-nav {
@@ -1005,7 +1010,6 @@ button:hover {
 
 	.side-nav ul li a:hover {
 		cursor: pointer;
-		color: var(--primary);
 		opacity: .8;
 		-webkit-transition: .2s ease;
 		-o-transition: .2s ease;
@@ -1051,7 +1055,7 @@ button:hover {
 
 	.active-menu {
 		border-right: none;
-        border-bottom: 4px solid var(--primary);
+        border-bottom: 4px solid var(--light);
         padding-bottom: 14px !important;
     }
 
@@ -1219,7 +1223,7 @@ footer {
 }
 
 footer img {
-    height: 60px;
+    height: 150px;
     width: auto;
     margin-bottom: 0px;
 }
@@ -1305,7 +1309,7 @@ a i:hover {
 
 .branding a {
 	text-decoration: none;
-	color: var(--primary);
+	color: var(--light);
 	margin-left: 2px;
     cursor: pointer;
     font-weight: 15px;
