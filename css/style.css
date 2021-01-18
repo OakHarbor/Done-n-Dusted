@@ -2,10 +2,6 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
-.navbar-menu {
-    z-index: 89;
-}
-
 .desktop, .tablet {
     display: none !important;
 }

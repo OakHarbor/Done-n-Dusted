@@ -2,6 +2,22 @@
 <---         CORE STYLES        -->
 <--- -------------------------- -*/
 
+iframe {
+    width: 100% !important;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+    margin-top: 50px;
+    max-width: 1000px;
+    height: 500px;
+}
+
+#download {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
 .skip {
     position: absolute;
     opacity: 0;
@@ -318,9 +334,45 @@ button:hover {
 
 /* Top Mobile Navigation */
 
+
+.circle-grow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background: rgb(43,56,143);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43,56,143,1)), to(rgba(38,169,224,1)));
+    background: -o-linear-gradient(right, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    top: -60px;
+    right: -60px;
+    z-index: 9000;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.circle-grow.clicked {
+    -webkit-transform: scale(60);
+        -ms-transform: scale(60);
+            transform: scale(60);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.circle-grow.clicked #hero {
+    overflow: hidden !important;
+}
+
 .nav-bubbles {
     position: absolute;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     top: -40px;
     z-index: 90;
     width: 100%;
@@ -353,7 +405,7 @@ button:hover {
 	    -ms-flex-pack: center;
 	        justify-content: center;
     height: 100%;
-    z-index: 900000000000;
+    z-index: 999000000;
 }
 
 .hamburger {
@@ -362,7 +414,7 @@ button:hover {
     top: 22px;
     -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
-    z-index: 900000000000;
+    z-index: 9999900000000000 !important;
 }
 
 .button-back {
@@ -372,13 +424,15 @@ button:hover {
     width: 60px;
     border-radius: 50%;
     background: rgb(43,56,143);
-    background: -moz-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
-    background: -webkit-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43,56,143,1)), to(rgba(38,169,224,1)));
+    background: -o-linear-gradient(right, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
     background: linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
     top: 50%;
     left: 50%;
     opacity: 1 !important;
-    transform: translate(-50%, -53%);
+    -webkit-transform: translate(-50%, -53%);
+        -ms-transform: translate(-50%, -53%);
+            transform: translate(-50%, -53%);
     -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
 }
@@ -392,10 +446,6 @@ button:hover {
 }
 
 .navbar-menu {
-	background: rgb(43,56,143);
-    background: -moz-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
-    background: -webkit-linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
-    background: linear-gradient(270deg, rgba(43,56,143,1) 0%, rgba(38,169,224,1) 100%);
     border-radius: 0 0 0 100%;
 	width: 0;
     position: fixed;
@@ -405,11 +455,66 @@ button:hover {
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    z-index: 800000000000;
+    z-index: 800000;
     max-width: 1700px;
     margin-left: auto !important;
     margin-right: auto !important;
     overflow: hidden;
+}
+
+/* Desktop */
+@media screen and (max-width: 1023px) {
+
+    .navbar-menu {
+        right: auto;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+                transform: translate(-50%);
+    }
+
+    .side-nav {
+        position: absolute;
+        top: 50%;
+        right: auto;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+    .side-nav ul {
+        padding: 0;
+        height: auto;
+        width: 132px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+                transform: translate(-50%, -30%);
+    }
+
+    .side-nav ul li {
+        text-align: left;
+        height: 30px;
+        width: 100%;
+        z-index: 9999999000000000;
+    }
+
+    .side-nav a {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 20px !important;
+    }
+
+    .active-menu {
+        border-right: 0px solid transparent !important;
+        border-left: 4px solid #fff;
+        border-radius: 2px;
+    }
+
 }
 
 .side-nav {
@@ -647,12 +752,12 @@ button:hover {
     }
 
     .top {
-        margin: auto !important;
+        margin: auto;
         margin-left: 0;
     }
 
     .contact-group {
-        width: 600px;
+        width: 900px;
         margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -774,7 +879,8 @@ button:hover {
         text-align: center;
         padding: 60px 0 50px;
         background: #fff;
-        box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.35);
     }
 
     .social-bar {
@@ -1215,6 +1321,11 @@ footer {
 
 .footer-item {
 	margin-bottom: 50px;
+}
+
+.item-1 a {
+    text-decoration: none;
+    color: #404040;
 }
 
 .item-content i {

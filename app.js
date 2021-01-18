@@ -1,8 +1,12 @@
 /* jQuery for the navigation animation */
 
 var $hamburger = $(".hamburger");
+const $menuBackground = $(".circle-grow");
+const $bubbles = $(".bubble-particles");
   $hamburger.on("click", function(e) {
     $hamburger.toggleClass("is-active");
+    $menuBackground.toggleClass("clicked");
+    $bubbles.toggleClass("clicked");
     // Do something else, like open/close menu
   });
 
