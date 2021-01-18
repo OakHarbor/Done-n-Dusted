@@ -18,6 +18,11 @@ iframe {
     margin-top: 50px;
 }
 
+#download:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
 .skip {
     position: absolute;
     opacity: 0;
